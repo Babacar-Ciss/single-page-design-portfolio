@@ -1,0 +1,12 @@
+{
+  "name": "single-page-design-portfolio",
+  "version": "1.0.0",
+  "description": "sp design portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch assets/styles/sass/main.scss:assets/styles/css/style.css"
+  },
+  "author": "Babacar ciss",
+  "license": "ISC"
+}

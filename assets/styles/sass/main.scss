@@ -1,0 +1,356 @@
+// Colors variables
+$purple : #755CDE;
+$orange : #F6A560;
+$pink : #F39E9E;
+$red : #EB7565;
+$blue : #61C4B7;
+$dark-purple : #552049;
+$black : #030303;
+$grey : #7A746E;
+$white : #FFF7F0;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans";
+    max-width: 144rem;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 111rem;
+    margin: 3.4rem auto;
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6.6rem;
+
+    &__logo {
+
+
+    }
+
+    &__button:link,
+    &__button:visited {
+       text-decoration: none;
+       color: $white ;
+       padding : 1.4rem 4.5rem;
+       font-size: 1.6rem;
+       background-color: $black;
+       border-radius: 2.8rem;
+       transition: all .2s;
+    }
+
+    &__button:hover {
+       background-color: $purple;
+    }
+}
+
+.title {
+    width: 75.1rem;
+    margin: 0 auto 8rem auto;
+    
+    h1 {
+        width: 100%;
+        color: $black;
+        font-size: 5.6rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 2.3rem;
+    }
+
+    p {
+        width: 96.3%;
+        margin: 0 auto;
+        color: $grey;
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-align: center;
+        line-height: 2.8rem;
+    }
+}
+
+.patterns {
+    display: grid;
+    grid-template-columns: 32% repeat(2, 14.5%) 32%;
+    grid-template-rows: 18.2rem 15.8rem;
+    column-gap: 2.37%;
+    row-gap: 2.4rem;
+    margin-bottom: 16rem;
+
+    & > * {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-content: space-between;
+        border-radius: .8rem;
+    } 
+
+    p {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #FFF7F0;
+        margin-left: 2.4rem;
+        margin-bottom: 2.4rem;
+        flex-basis: 100%;
+    }
+   
+    
+    img {
+        margin-top: 2.4rem;
+        margin-right: 2.4rem;
+        margin-left: auto;
+    }
+
+
+    &__graphic {
+        background-color: $purple;
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;   
+
+        img {
+            width: 12.8rem ;
+            height: 19.2rem;
+        }
+    }
+
+    &__UI-UX {
+        background-color: $orange;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;   
+
+        img {
+            width: 6.4rem ;
+            height: 6.4rem;
+        }
+    }
+
+    &__apps {
+        background-color: $pink;
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;   
+
+        img {
+            width: 6.4rem ;
+            height: 6.4rem;
+        }
+    }
+
+    &__illustrations {
+        background-color: $red;
+        grid-row: 2 / 3;
+        grid-column: 2 / 4;   
+
+        img {
+            width: 12.8rem ;
+            height: 6.4rem;
+        }
+    }
+
+    &__photography {
+        background-color: $blue;
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;   
+
+        img {
+            width: 16rem ;
+            height: 6.4rem;
+        }
+    }
+
+    &__motion-graphics {
+        background-color: $dark-purple;
+        grid-row: 2 / 3;
+        grid-column: 4 / 5;   
+
+        img {
+            width: 12.8rem ;
+            height: 6.4rem;
+        }
+    }
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8.8rem;
+
+    &__image {
+        width: 44.5rem;
+        height: 44.5rem;
+        border-radius: 50%;
+    }
+
+    &__details {
+        width: 54rem;
+        align-self: center;
+
+
+        h1 {
+            color: $black;
+            font-weight: 700;
+            font-size: 4rem;
+            line-height: 5rem;
+            margin-bottom: 3.4rem;
+        }
+
+        p {
+            color: $grey;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            margin-bottom: 3.2rem;
+        }
+
+        &--button:link,
+        &--button:visited {
+            text-decoration: none;
+            color: $white ;
+            padding : 1.4rem 4.5rem;
+            font-size: 1.6rem;
+            background-color: $red;
+            border-radius: 2.8rem;
+            transition: all .2s;
+        }
+        &--button:hover {
+            background-color: $orange;
+        }
+  
+}
+}
+
+.my-work {
+    margin-bottom: 8.8rem;
+
+    &--title {
+    color: $black;
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-bottom: 5.6rem ;
+    text-align: center;
+    }
+
+
+    &__pictures {
+        display: flex;
+        transform: translateX(-76.5%);
+        margin-bottom: 5.6rem ;
+
+    & > * {
+        margin-right: 3rem;
+        border-radius: .8rem ;
+    }
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: center;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 1.6rem;
+            width: 6.4rem;
+            height: 6.4rem;
+            background: $black;
+            cursor: pointer;
+            transition: all .2s;
+        }
+
+        div:hover {
+            background: $purple;
+        }
+    }
+
+
+}
+
+.book-cta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5.6rem;
+    height: 32rem;
+    background: $black;
+    border-radius: 1rem;
+    
+    &__text-container {
+        
+        h2,
+        p {
+            width: 54rem;
+            color: $white;
+        }
+        
+        h2 {
+            font-weight: 700;
+            font-size: 4rem;
+            color: #FFF7F0;
+            margin-bottom: 2.5rem;
+        }
+
+        p{
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            color: #FFF7F0;
+        }
+    }
+
+    &__button:link,
+    &__button:visited {
+       text-decoration: none;
+       color: $white ;
+       padding : 1.4rem 4.5rem;
+       font-size: 1.6rem;
+       background-color: $pink;
+       border-radius: 2.8rem;
+       transition: all .2s;
+    }
+
+    &__button:hover {
+        background-color: $orange;
+    }
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6.6rem;
+
+    &__button:link,
+    &__button:visited {
+       text-decoration: none;
+       color: $white ;
+       padding : 1.4rem 4.5rem;
+       font-size: 1.6rem;
+       background-color: $black;
+       border-radius: 2.8rem;
+       transition: all .2s;
+    }
+
+    &__button:hover {
+        background-color: $purple;
+     }
+}
+}

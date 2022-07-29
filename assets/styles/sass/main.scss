@@ -35,12 +35,10 @@ body {
 
 .container {
      width: 77%;
-     //width: 90vw;
     margin: 3.4rem auto;
 
     @media (min-width :768px) and (max-width :1439px) {
-        // max-width: 68.5rem;  
-        width: 90%;
+        width: 89.8%;
     }
 
     @media (min-width :375px) and (max-width :767px) {
@@ -93,14 +91,15 @@ body {
 }
 
 .title {
-    width: 75.1rem;
     display: flex;
     flex-direction: column;
     margin: 0 auto 8rem auto;
+    text-align: center;
 
 
     @media (min-width :768px) and (max-width :1440px) {
         margin: 0 auto 6.4rem auto; 
+        
     }
 
     @media (min-width :375px) and (max-width :767px) {
@@ -108,7 +107,6 @@ body {
     }
     
     h1 {
-        width: 75.1rem;
         color: $black;
         font-size: 5.6rem;
         font-weight: 700;
@@ -116,21 +114,20 @@ body {
         margin-bottom: 2.3rem;
 
         @media (min-width :768px) and (max-width :1440px) {
-            width: 69rem;
             margin-bottom: 2.7rem;
             font-size: 4.4rem;  
         }
 
         @media (min-width :375px) and (max-width :767px) {
-            width: 34.3rem;
-            margin-bottom: 1.6rem;
+            padding:0 2rem 0 2rem; 
+            margin: 0 auto 1.6rem auto;
             font-size: 3.6rem;  
         }
     }
 
     p {
-        width: 73rem;
         margin: 0 auto;
+        padding:0 23rem 0 23rem;
         color: $grey;
         font-size: 1.8rem;
         font-weight: 400;
@@ -138,26 +135,26 @@ body {
         line-height: 2.8rem;
 
         @media (min-width :768px) and (max-width :1440px) {
-            width: 57.3rem;  
-            margin-left: 5.5rem;
+            padding:0 6rem 0 6rem;  
             margin-right: auto; 
         }
 
         @media (min-width :375px) and (max-width :767px) {
-            width: 28.5rem;  
-            margin-left: 3.5rem;
-            margin-right: auto; 
+            padding:0 3rem 0 3rem;  
+            margin : 0 auto; 
         }
     }
 }
 
 .patterns {
+    width: 100%;
     display: grid;
     grid-template-columns: 32% repeat(2, 14.5%) 32%;
     grid-template-rows: 18.2rem 15.8rem;
     column-gap: 2.37%;
     row-gap: 2.4rem;
     margin-bottom: 16rem;
+    justify-content: center;
 
     @media (min-width :768px) and (max-width :1440px) {
         grid-template-columns: 33.3rem repeat(2, 15.5rem);
@@ -168,11 +165,11 @@ body {
     }
 
     @media (min-width :375px) and (max-width :767px) {
+        margin-bottom: 10rem;
         grid-template-columns: repeat(2, 15.9rem);
         grid-template-rows: 36.4rem 18.2rem 15.8rem repeat(2,18.2rem);
         column-gap: 2.5rem;
         row-gap: 2.4rem;
-        margin-bottom: 10rem;
     }
 
     & > * {
@@ -308,7 +305,7 @@ body {
 
 .profile {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 8.8rem;
 
     @media (min-width :768px) and (max-width :1440px) {
@@ -415,6 +412,7 @@ body {
 
 .my-work {
     margin-bottom: 8.8rem;
+    width: 100%;
 
     &--title {
     color: $black;
@@ -432,31 +430,54 @@ body {
 
     &__pictures {
         display: flex;
-        transform: translateX(-76.5%);
+        width: 100%;
+        position: relative;
+        left: 17rem;
         margin-bottom: 5.6rem ;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: all .2s ease-in;
+
 
         @media (min-width :768px) and (max-width :1440px) {
-            width: 54rem;
-            height: 36rem;
-            transform: translateX(-197%);
+            left: 16rem;
         }
 
         @media (min-width :375px) and (max-width :767px) {
             width: 27rem;
             height: 18rem;
-            transform: translateX(-209%);
             margin-bottom: 3.2rem ;
+            left: 6rem;
         }
 
-    & > * {
-        margin-right: 3rem;
+    &--slide {
         border-radius: .8rem ;
+        position: relative;
+        margin-right: 3rem;
+        width: 54rem;
+        height: 36rem;
+
+        @media (min-width :375px) and (max-width :767px) {
+            width: 27rem;
+            height: 18rem;
+            margin-bottom: 3.2rem ;
+            left : 50px 
+        }
+
+        @media (min-width :768px) and (max-width :1440px) {
+            width: 54rem;
+            height: 36rem;
+        }
     }
+
+
     }
 
     &__navigation {
         display: flex;
         justify-content: center;
+        margin-left: 2rem;
+        margin-top: 3.2rem;
 
         div {
             display: flex;
@@ -469,8 +490,6 @@ body {
             background: $black;
             cursor: pointer;
             transition: all .2s;
-
-            
         }
 
         div:hover {
@@ -482,6 +501,7 @@ body {
 }
 
 .book-cta {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -497,11 +517,10 @@ body {
     }
 
     @media (min-width :375px) and (max-width :767px) {
-        width: 34.3rem;
         height: 35.2rem;
         flex-direction: column;
         text-align: center;
-        margin-bottom: 4rem ;
+        margin-bottom: 0 auto 4rem auto ;
     }
     
     &__text-container {
@@ -604,4 +623,16 @@ body {
         background-color: $purple;
      }
 }
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+
+}
+
+
+.swiper-wrapper {
+    margin-bottom: 50px;
+
 }

@@ -24,7 +24,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .container {
-    width: 90%;
+    width: 89.8%;
   }
 }
 @media (min-width: 375px) and (max-width: 767px) {
@@ -73,10 +73,10 @@ body {
   background-color: #755CDE;
 }
 .container .title {
-  width: 75.1rem;
   display: flex;
   flex-direction: column;
   margin: 0 auto 8rem auto;
+  text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   .container .title {
@@ -89,7 +89,6 @@ body {
   }
 }
 .container .title h1 {
-  width: 75.1rem;
   color: #030303;
   font-size: 5.6rem;
   font-weight: 700;
@@ -98,21 +97,20 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   .container .title h1 {
-    width: 69rem;
     margin-bottom: 2.7rem;
     font-size: 4.4rem;
   }
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .container .title h1 {
-    width: 34.3rem;
-    margin-bottom: 1.6rem;
+    padding: 0 2rem 0 2rem;
+    margin: 0 auto 1.6rem auto;
     font-size: 3.6rem;
   }
 }
 .container .title p {
-  width: 73rem;
   margin: 0 auto;
+  padding: 0 23rem 0 23rem;
   color: #7A746E;
   font-size: 1.8rem;
   font-weight: 400;
@@ -121,25 +119,25 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   .container .title p {
-    width: 57.3rem;
-    margin-left: 5.5rem;
+    padding: 0 6rem 0 6rem;
     margin-right: auto;
   }
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .container .title p {
-    width: 28.5rem;
-    margin-left: 3.5rem;
-    margin-right: auto;
+    padding: 0 3rem 0 3rem;
+    margin: 0 auto;
   }
 }
 .container .patterns {
+  width: 100%;
   display: grid;
   grid-template-columns: 32% repeat(2, 14.5%) 32%;
   grid-template-rows: 18.2rem 15.8rem;
   column-gap: 2.37%;
   row-gap: 2.4rem;
   margin-bottom: 16rem;
+  justify-content: center;
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   .container .patterns {
@@ -152,11 +150,11 @@ body {
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .container .patterns {
+    margin-bottom: 10rem;
     grid-template-columns: repeat(2, 15.9rem);
     grid-template-rows: 36.4rem 18.2rem 15.8rem repeat(2, 18.2rem);
     column-gap: 2.5rem;
     row-gap: 2.4rem;
-    margin-bottom: 10rem;
   }
 }
 .container .patterns > * {
@@ -282,7 +280,7 @@ body {
 }
 .container .profile {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 8.8rem;
 }
 @media (min-width: 768px) and (max-width: 1440px) {
@@ -391,6 +389,7 @@ body {
 }
 .container .my-work {
   margin-bottom: 8.8rem;
+  width: 100%;
 }
 .container .my-work--title {
   color: #030303;
@@ -407,31 +406,53 @@ body {
 }
 .container .my-work__pictures {
   display: flex;
-  transform: translateX(-76.5%);
+  width: 100%;
+  position: relative;
+  left: 17rem;
   margin-bottom: 5.6rem;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   .container .my-work__pictures {
-    width: 54rem;
-    height: 36rem;
-    transform: translateX(-197%);
+    left: 16rem;
   }
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .container .my-work__pictures {
     width: 27rem;
     height: 18rem;
-    transform: translateX(-209%);
     margin-bottom: 3.2rem;
+    left: 6rem;
   }
 }
-.container .my-work__pictures > * {
-  margin-right: 3rem;
+.container .my-work__pictures--slide {
   border-radius: 0.8rem;
+  position: relative;
+  margin-right: 3rem;
+  width: 54rem;
+  height: 36rem;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .container .my-work__pictures--slide {
+    width: 27rem;
+    height: 18rem;
+    margin-bottom: 3.2rem;
+    left: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .container .my-work__pictures--slide {
+    width: 54rem;
+    height: 36rem;
+  }
 }
 .container .my-work__navigation {
   display: flex;
   justify-content: center;
+  margin-left: 2rem;
+  margin-top: 3.2rem;
 }
 .container .my-work__navigation div {
   display: flex;
@@ -449,6 +470,7 @@ body {
   background: #755CDE;
 }
 .container .book-cta {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -466,11 +488,10 @@ body {
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .container .book-cta {
-    width: 34.3rem;
     height: 35.2rem;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 0 auto 4rem auto;
   }
 }
 .container .book-cta__text-container h2,
@@ -562,6 +583,15 @@ body {
 }
 .container .footer__button:hover {
   background-color: #755CDE;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-wrapper {
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

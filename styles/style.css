@@ -1,0 +1,457 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  max-width: 1512px;
+  font-size: 62.5%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container {
+  width: 80.3%;
+  margin: 0 auto;
+  position: relative;
+  left: 40%;
+  transform: translateX(-50%);
+  padding-top: 35px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 120px 243px repeat(4, 1fr);
+  grid-template-rows: 80px 197px repeat(4, 150px);
+}
+.header__logo-wrapper {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+}
+.header__logo-wrapper img {
+  width: 113px;
+  height: 40px;
+}
+.header__logo-wrapper img:last-child {
+  width: 120px;
+}
+.header__nav {
+  grid-column: 3/7;
+  display: flex;
+  align-items: center;
+  margin-top: 39px;
+}
+.header__nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Expressway Free";
+  font-size: 30px;
+  font-weight: 400;
+  color: #E03A3A;
+}
+.header__nav ul li {
+  list-style: none;
+}
+.header__nav ul li:last-child {
+  color: #FFF;
+  background-color: #E03A3A;
+  padding-inline: 27px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  border-radius: 30px;
+}
+.header__circle-pattern {
+  position: absolute;
+  top: 19%;
+  left: 42%;
+  transform: translate(-33%, 30%);
+  z-index: -1;
+  transform-origin: top;
+  border-radius: 50%;
+  width: 440px;
+  height: 440px;
+  border: 3.2px solid #E6E5E3;
+  margin-left: 50px;
+}
+.header__hero {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+.header__hero--lid {
+  position: relative;
+  z-index: 2;
+  left: 0px;
+  top: 5px;
+  transform: translate(2px, 22px);
+}
+.header__hero--bottle {
+  position: relative;
+  z-index: 1;
+  left: -61px;
+  top: -37px;
+}
+.header__cta:visited, .header__cta:link {
+  grid-column: 4/5;
+  grid-row: 5/6;
+  font-family: "Expressway Free";
+  font-size: 30px;
+  color: #FFF;
+  background-color: #E03A3A;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 174px;
+  height: 40px;
+  border-radius: 30px;
+  transform: translate(4px, 95px);
+}
+.header__text-cta {
+  grid-column: 1/7;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 45px;
+}
+.header__text-cta h1 {
+  font-family: "Expressway Free";
+  transform: translateY(-25px);
+  font-size: 145px;
+  color: #E03A3A;
+  font-weight: 400;
+}
+.header__text-cta p {
+  font-family: "Noto Sans";
+  transform: translate(20px, -40px);
+  font-size: 45px;
+  color: #000000;
+  letter-spacing: 30px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 982px);
+}
+.main__ingredients {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.main__details-left {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #E03A3A;
+  padding-top: 268px;
+}
+.main__details-left--detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 42px;
+}
+.main__details-left--detail p {
+  font-size: 45px;
+  font-family: "Noto Sans";
+  line-height: 61px;
+  color: #FFF;
+}
+.main__details-right {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: #CECDCB;
+  padding-top: 260px;
+}
+.main__details-right--detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 42px;
+}
+.main__details-right--detail p {
+  font-size: 45px;
+  font-family: "Noto Sans";
+  line-height: 61px;
+  color: #000;
+  padding: 0 160px;
+  text-align: center;
+}
+.main__details-right--detail img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7458%) hue-rotate(159deg) brightness(120%) contrast(109%);
+}
+.main__details-right--cta:link, .main__details-right--cta:visited {
+  font-family: "Expressway Free";
+  font-size: 30px;
+  color: #FFF;
+  background-color: #E03A3A;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 174px;
+  height: 40px;
+  border-radius: 30px;
+  margin-inline: auto;
+  transform: translateY(4px);
+}
+.main__chef {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.make-choice {
+  padding-top: 148px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.make-choice h1 {
+  width: 359px;
+  color: #E03A3A;
+  font-family: "Expressway Free";
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 94px;
+}
+.make-choice p {
+  width: 210px;
+  font-family: "Noto Sans";
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 41px;
+  color: #000;
+  margin-bottom: 41px;
+}
+.make-choice__text-section--form {
+  position: relative;
+}
+.make-choice__text-section--form button {
+  width: 174px;
+  height: 40px;
+  font-size: 27px;
+  border-radius: 30px;
+  color: #FFF;
+  background-color: #E03A3A;
+  border: none;
+  position: absolute;
+  left: 220px;
+}
+.make-choice__text-section--form input {
+  width: 394px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid #E03A3A;
+  padding-left: 23px;
+}
+.make-choice__text-section--form input::placeholder {
+  color: #898989;
+  font-size: 15px;
+  font-family: "Noto Sans";
+}
+.make-choice__text-section--form input:focus {
+  outline: none;
+}
+.make-choice__circle-pattern {
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-128px, -50px);
+  width: 686px;
+  height: 686px;
+  border: 5px solid #E6E5E3;
+}
+.make-choice__other-bottles {
+  width: 310px;
+  transform: translate(-100px, -200px);
+  height: 378px;
+  display: flex;
+  flex-direction: column;
+}
+.make-choice__other-bottles img {
+  margin-bottom: -80px;
+}
+
+.how-to-make-sauce {
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+  height: 989px;
+  background-color: #D9D9D9;
+  position: relative;
+}
+.how-to-make-sauce img {
+  height: 510px;
+}
+.how-to-make-sauce__box-overlay {
+  z-index: 50;
+  position: absolute;
+  width: 100%;
+  height: 510px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  opacity: 0.6;
+}
+.how-to-make-sauce__text {
+  padding-top: 133px;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 510px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.how-to-make-sauce__text h1 {
+  color: #FFFFFF;
+  font-family: "Expressway Free";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 94px;
+}
+.how-to-make-sauce__text p {
+  font-family: "Noto Sans";
+  font-weight: 100;
+  font-size: 39px;
+  line-height: 53px;
+  letter-spacing: 0.71em;
+  color: #E03A3A;
+}
+.how-to-make-sauce__text--cta:visited, .how-to-make-sauce__text--cta:link {
+  font-family: "Expressway Free";
+  font-size: 30px;
+  color: #FFF;
+  background-color: #E03A3A;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 174px;
+  height: 40px;
+  border-radius: 30px;
+  margin-top: 60px;
+}
+
+.social {
+  padding-top: 79px;
+  padding-bottom: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social h1 {
+  color: #E03A3A;
+  font-family: "Expressway Free";
+  font-size: 80px;
+  line-height: 94px;
+}
+.social p {
+  font-family: "Noto Sans";
+  font-size: 39px;
+  line-height: 53px;
+  letter-spacing: 27px;
+  color: #E03A3A;
+}
+.social__galery {
+  margin-top: 92px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.white-book {
+  background-color: #000;
+  height: 150px;
+}
+.white-book__container {
+  width: 80.3%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.white-book__container--left {
+  display: flex;
+}
+.white-book__container--left p {
+  font-family: "Expressway Free";
+  font-size: 40px;
+  line-height: 47px;
+  color: #FFFFFF;
+}
+.white-book__container--left img {
+  width: 52px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(4860%) hue-rotate(183deg) brightness(109%) contrast(101%);
+  margin-right: 38px;
+}
+.white-book__container--form {
+  position: relative;
+}
+.white-book__container--form button {
+  width: 174px;
+  height: 40px;
+  font-size: 27px;
+  border-radius: 30px;
+  color: #FFF;
+  background-color: #E03A3A;
+  border: none;
+  position: absolute;
+  left: 166px;
+  top: 4px;
+}
+.white-book__container--form input {
+  width: 348px;
+  height: 48px;
+  border-radius: 30px;
+  border: 1px solid #E03A3A;
+  padding-left: 23px;
+}
+.white-book__container--form input::placeholder {
+  color: #898989;
+  font-size: 15px;
+  font-family: "Noto Sans";
+}
+.white-book__container--form input:focus {
+  outline: none;
+}
+
+.footer {
+  height: 150px;
+  background-color: #D9D9D9;
+}
+.footer__container {
+  width: 80.3%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__container--logo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.footer__container--logo-wrapper img {
+  mix-blend-mode: color-burn;
+}
+.footer__container--social {
+  display: flex;
+}
+.footer__container--social img:not(:last-child) {
+  margin-right: 19px;
+}
+
+/*# sourceMappingURL=style.css.map */

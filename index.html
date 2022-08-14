@@ -5,109 +5,159 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="./assets/styles/css/style.css" >
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./assets/styles/vendors/slick.css"> -->
-
-  <title>Frontend Mentor | Single-page design portfolio</title>
+  <link rel="stylesheet" href="./styles/style.css" >
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">  
+  <link href="http://fonts.cdnfonts.com/css/expressway-free?styles=39702" rel="stylesheet">
+  <title>COOK HOME LANDING PAGE</title>
 </head>
 <body>
-  <div class="container">
-      <div class="header">
-        <svg class="header__logo" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#030303" d="M0 0h64v64H0z"/><circle stroke="#FFF7F0" stroke-width="4" cx="32" cy="32" r="14"/></g></svg>
-        <a class="header__button" href="#">Free Consultation</a>
-      </div>
-      
-      <div class="title">
-        <h1>Design solutions made easy</h1>
-        <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
-      </div>
-
-      <div class="patterns">
-        
-        <div class="patterns__graphic" > 
-          <p>Graphic Design</p>
-          <img src="./assets/pattern-graphic-design.svg" alt="graphic design image">
-        </div>
-        
-        <div class="patterns__UI-UX" > 
-          <p>UI/UX</p>
-          <img src="./assets/pattern-ui-ux.svg" alt="UI-UX design image">
-        </div>
-
-        <div class="patterns__apps" > 
-          <p>Apps</p>
-          <img src="./assets/pattern-apps.svg" alt="UI-UX design image">
-        </div>
-
-        <div class="patterns__illustrations" > 
-          <p>Illustrations</p>
-          <img src="./assets/pattern-illustrations.svg" alt="UI-UX design image">
-        </div>
-
-        <div class="patterns__photography" > 
-          <p>Photography</p>
-          <img src="./assets/pattern-photography.svg" alt="UI-UX design image">
-        </div>
-
-        <div class="patterns__motion-graphics" > 
-          <p>Motion Graphics</p>
-          <img src="./assets/pattern-motion-graphics.svg" alt="UI-UX design image">
-        </div>
-      </div>
-
-      <div class="profile">
-        <img class ="profile__image" src="./assets/image-amy.webp" alt="amy profile picture">
-        <div class ="profile__details">
-          <h1>I’m Amy, and I’d love to work on your next project</h1>
-          <p>I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
-          <a class="profile__details--button" href="#">Free Consultation</a>
-        </div>
-
-      </div>
-
-      <div class="my-work swiper">
-        <h1 class="my-work--title"> My Work </h1>
-        <div class="my-work__pictures swiper-wrapper">
-            <img class="my-work__pictures--slide swiper-slide" src="/assets/image-slide-3.jpg" alt="slide 3">
-            <img class="my-work__pictures--slide swiper-slide" src="/assets/image-slide-4.jpg" alt="slide 4">
-            <img class="my-work__pictures--slide swiper-slide" src="/assets/image-slide-5.jpg" alt="slide 5">          
-            <img class="my-work__pictures--slide swiper-slide" src="./assets/image-slide-1.jpg" alt="slide 1">
-            <img class="my-work__pictures--slide swiper-slide" src="/assets/image-slide-2.jpg" alt="slide 2">
-        </div>
-
-        <div class="my-work__navigation">
-          <div class="my-work__navigation--arrow-left ">
-            <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path fill="#FFF" d="M8 0 0 8l8 8 1.687-1.687-5.121-5.12h10.241V6.807H4.566l5.121-5.12z"/></svg>
+      <div class="container">
+        <section class="header">
+          <div class="header__logo-wrapper">
+            <img src="./assets/cook-logo.png" alt="logo" />
+            <img src="./assets/home-logo.png" alt="logo" />
           </div>
-          <div class="my-work__navigation--arrow-right ">
-            <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path fill="#FFF" d="m6.808 16 8-8-8-8-1.687 1.687 5.121 5.12H.001v2.386h10.241l-5.121 5.12z"/></svg>
+          <nav class="header__nav">
+            <ul>
+              <li>Sauce</li>
+              <li>Recipes</li>
+              <li>About</li>
+              <li>Contact</li>
+              <li>Shop now</li>
+            </ul>
+          </nav>
+
+          <div class="header__circle-pattern" id="circle-pattern"></div>
+          
+          <div class="header__hero">
+            <img class="header__hero--lid" id="lid"   src="./assets/lid.png" alt="bottle image">
+            <img class="header__hero--bottle" id="bottle" src="./assets/bottle.png" alt="bottle image">
+          </div>
+          
+          <a href="#" class ="header__cta" id="cta" >Shop now</a>
+        
+          <div class="header__text-cta" id="text-cta">
+            <h1> Your perfect souce  </h1>
+            <p>Choose your perfect</p>
+          </div>
+        </section>
+      </div>
+      <section class="main">
+        <img class="main__ingredients" src="./assets/ingredients.png" alt="ingredients picture">
+        <div class="main__details-left"> 
+
+          <div class="main__details-left--detail">
+            <img src="./assets/Vector.svg" alt="pepper picture">
+            <p> Natural products </p>
+          </div>
+          <div class="main__details-left--detail">
+            <img src="./assets/Vector.svg" alt="pepper picture">
+            <p> Wihtout Sugar </p>
+          </div>
+          <div class="main__details-left--detail">
+            <img src="./assets/Vector.svg" alt="pepper picture">
+            <p> Made with Love </p>
           </div>
         </div>
-      </div>
-
-      <div class="book-cta">
-        <div class="book-cta__text-container">
-          <h2> Book a call with me</h2>
-          <p>I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+        
+        <img class="main__chef" src="./assets/chef.png" alt="chef picture">
+        
+        <div class="main__details-right">
+          <div class="main__details-right--detail">
+            <img src="./assets/Vector.svg" alt="pepper picture">
+            <p> There different types of spiciness </p>
+          </div>
+          <div class="main__details-right--detail">
+            <img src="./assets/Vector.svg" alt="pepper picture">
+            <p> no artificial colours </p>
+          </div>  
+        
+          <a href="#" class ="main__details-right--cta" id="cta--main" >Shop now</a>
         </div>
-        <a class="book-cta__button" href="#">Free Consultation</a>
+      </section>
+
+      <div class="container" >
+        <section class="make-choice">
+          <div class="make-choice__text-section">
+            <h1> Make your choice</h1>
+            <p> Best sauce that you can found. Try it one </p>
+            
+            <form class="make-choice__text-section--form">
+              <input type="text" placeholder="Your email...">
+              <button> Submit </button>
+            </form>
+           
+          </div>
+
+          <div class="make-choice__circle-pattern">
+
+          </div>
+
+          
+          <div class="make-choice__other-bottles">
+            <img src="./assets/lemon-chicken.png" alt=" lemon-chicken picture" />
+            <img src="./assets/bbq roast chicken.png" alt=" lemon-chicken picture" />
+            <img src="./assets/curry roast chicken.png" alt=" lemon-chicken picture" />
+          </div>
+
+        </section>
       </div>
 
-      <div class="footer">
-        <svg class="footer__logo" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#030303" d="M0 0h64v64H0z"/><circle stroke="#FFF7F0" stroke-width="4" cx="32" cy="32" r="14"/></g></svg>
-        <a class="footer__button" href="#">Free Consultation</a>
-      </div>
-  </div>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="./assets/scripts/slick.min.js"></script> -->
-    
+      <section class="how-to-make-sauce">
+        <!-- <img src="./assets/how-to-make-sauce.png" alt="how to make sauce"> -->
+        <img src="./assets/how-to-make-sauce.png" alt="how to make sauce" />
+        <div class="how-to-make-sauce__box-overlay">
+        </div>
+        <div class="how-to-make-sauce__text">
+          <h1>How we make sauce</h1>
+          <p>We will show you our secret</p>
+          <a href="#" class ="how-to-make-sauce__text--cta" id="cta" >Read</a>
+        </div>
+      </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <section class="social">
+        <h1> We make sauce social </h1>
+        <p>@coochome </p>
+        <div class="social__galery">
+          <img src="./assets/slide-tomato-sauce.png" alt="gallery picture">
+          <img src="./assets/bottle back-and-front.png" alt="gallery picture">
+          <img src="./assets/family-bottle.png" alt="gallery picture">
+          <img src="./assets/sauce.png" alt="gallery picture">
+          <img src="./assets/slide-bottle.png" alt="gallery picture"/>
+          <img src="./assets/slide-tomato-sauce-2.png" alt="gallery picture"/>
+        </div>
+      </section>
 
-  <script type="module" src="index.js"> </script>
+      <section class="white-book">
+        <div class="white-book__container">
+          <div class="white-book__container--left">
+            <img src="./assets/Vector.svg" alt="pepper logo">
+            <p>Let's keep in touch</p>
+          </div>
+          <form class="white-book__container--form">
+            <input type="text" placeholder="Your email...">
+            <button> Read </button>
+          </form>
+        </div>
+
+        <footer class="footer">
+          <div class="footer__container">
+            <div class="footer__container--logo-wrapper">
+              <img src="./assets/cook-logo.png" alt="logo" />
+              <img src="./assets/home-logo.png" alt="logo" />
+            </div>
+
+            <div class="footer__container--social">
+              <img src="./assets/youtube.svg" alt="logo" />
+              <img src="./assets/facebook.svg" alt="logo" />
+              <img src="./assets/insta.svg" alt="logo" />
+            </div>
+          </div>
+      </footer>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+      <script src="index.js"></script>
 </body>
 </html>

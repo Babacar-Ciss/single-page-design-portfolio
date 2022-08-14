@@ -1,30 +1,40 @@
+// gsap.registerPlugin(ScrollTrigger);
 
-const swiper  = new Swiper(".swiper", {
-  slidesPerView: "auto",
-  loop : "true",
-  centeredSlides: true,
-  direction: 'horizontal',
-  spaceBetween: 30,
-  navigation: {
-    nextEl: '.my-work__navigation--arrow-right',
-    prevEl: '.my-work__navigation--arrow-left',
-  },
-  breakpoints: {
-    375: {
-      slidesPerView: "auto",
-      spaceBetween: 20,
-    },
-    768: {
-       slidesPerView: "auto",
-       navigation: {
-        nextEl: '.my-work__navigation--arrow-right',
-        prevEl: '.my-work__navigation--arrow-left',
-      },
-    },
-    1440: {
-      slidesPerView: "auto",
-      spaceBetween: 50,
-    },
-  },
-});
-;
+
+
+
+// gsap.to("#lid", {
+//     scrollTrigger : {
+//         trigger : "#lid",
+//         start : " bottom",
+//         markers : true,
+//     },
+//     duration : 2, 
+//     y : -110, 
+//     delay : 1})
+
+
+
+// gsap.to("#bottle", {duration : 2, y : 200, delay : 1})
+
+// gsap.to("#circle-pattern", {
+//                             scale : 1.5,
+//                             translateY : 10,
+//                             duration : 2, 
+//                             delay : 1});
+
+// gsap.to("#cta",            {
+//                             translateY : -120,
+//                             duration : 2, 
+//                             delay : 1})
+                                 
+
+// gsap.fromTo("#text-cta", { autoAlpha: 0,
+//                            scale : 0 }, 
+//                          { autoAlpha : 1,
+//                            duration : 1.7,
+//                            scale : 1,
+//                            delay : 1,
+//                            easOut : Power1  })
+                                     
+                                     
